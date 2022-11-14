@@ -24,19 +24,6 @@ void FillTriangle()
 
 void PrintTriangle()
 {
-    for (int i = 0; i < row; i++)
-    {
-        for (int j = 0; j < row; j++)
-        {
-            if (triangle[i, j] != 0)
-                Console.Write($"{triangle[i, j],cellWidth}");
-        }
-        Console.WriteLine();
-    }
-}
-
-void Magic()
-{
     int col = cellWidth * row;
     for (int i = 0; i < row; i++)
     {
@@ -54,6 +41,5 @@ void Magic()
 }
 Console.WriteLine();
 FillTriangle();
-//PrintTriangle();
+PrintTriangle();
 Console.WriteLine();
-Magic();
